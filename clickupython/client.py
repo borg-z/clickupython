@@ -212,7 +212,7 @@ class ClickUpClient:
         name: str,
         content: str,
         due_date: str,
-        priority: int,
+        priority: str,
         status: str,
     ) -> models.SingleList:
         """Creates and returns a List object in a folder from a given folder ID.
@@ -247,7 +247,7 @@ class ClickUpClient:
         name: str,
         content: str = None,
         due_date: str = None,
-        priority: int = None,
+        priority: str = None,
         assignee: str = None,
         status: str = None,
     ) -> models.SingleList:
@@ -275,7 +275,7 @@ class ClickUpClient:
         content: str = None,
         due_date: str = None,
         due_date_time: bool = None,
-        priority: int = None,
+        priority: str = None,
         assignee: str = None,
         unset_status: bool = None,
     ) -> models.SingleList:
@@ -680,7 +680,7 @@ class ClickUpClient:
         list_id: str,
         name: str,
         description: str = None,
-        priority: int = None,
+        priority: str = None,
         assignees: [] = None,
         tags: [] = None,
         status: str = None,
@@ -738,7 +738,7 @@ class ClickUpClient:
         name: str = None,
         description: str = None,
         status: str = None,
-        priority: int = None,
+        priority: str = None,
         time_estimate: int = None,
         archived: bool = None,
         add_assignees: List[str] = None,
